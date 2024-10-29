@@ -21,28 +21,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <nav className="navbar navbar-expand-lg navbar-dark custom-navbar">
-        <div className="container">
-          <a className="navbar-brand" href="#">CSec Solutions</a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ms-auto">
-              <li className="nav-item">
-                <a className="nav-link" href="#services">Serviços</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#about">Sobre</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#contact">Contato</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <header className="header">
+            <header className="header">
         <div className="container text-center" data-aos="fade-down">
           <h1 className="display-4">CSec Solutions</h1>
           <p className="lead">Segurança digital prática e acessível para você e sua empresa</p>

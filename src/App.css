@@ -111,11 +111,11 @@ body {
   .navbar-collapse {
     background-color: #1b1b1b;
     position: fixed;
-    top: 60px;
+    top: 0;
     left: 0;
     width: 100%;
-    height: calc(100% - 60px);
-    padding: 1rem;
+    height: 100%;
+    padding-top: 100px;
     z-index: 10;
     overflow-y: auto;
   }
@@ -124,11 +124,15 @@ body {
     text-align: center;
   }
   .nav-item {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
   .nav-link {
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+  }
+  .nav-link:hover {
+    color: #0073e6;
   }
 }
 
