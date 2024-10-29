@@ -1,38 +1,107 @@
-.App {
+
+/* App.css */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.navbar {
+  background-color: #1b1b1b;
+}
+
+.header {
+  background: linear-gradient(90deg, #1b1b1b, #0073e6);
+  color: #fff;
+  padding: 100px 0;
   text-align: center;
+  animation: fadeIn 2s;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn-primary {
+  background-color: #0073e6;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-primary:hover {
+  background-color: #005bb5;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.service-card {
+  background: #fff;
+  padding: 30px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: bounceIn 1s;
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.8); opacity: 0; }
+  60% { transform: scale(1.05); opacity: 1; }
+ 100% { transform: scale(1); }
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.icon-wrapper {
+  font-size: 3rem;
+  color: #0073e6;
+}
+
+.service-card h2 {
+  color: #0073e6;
+  margin-top: 10px;
+}
+
+.service-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.service-card ul li {
+  background: #f9f9f9;
+  margin: 5px 0;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.footer {
+  background: #1b1b1b;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.contact-form .form-control {
+  border-radius: 5px;
+}
+
+.contact-form .btn-primary {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
 }
