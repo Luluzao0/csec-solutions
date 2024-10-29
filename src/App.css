@@ -106,20 +106,46 @@ body {
   border-radius: 5px;
 }
 
-/* Fix for the mobile navbar not toggling */
+/* Responsive Navbar */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #1b1b1b;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 60px);
+    padding: 1rem;
+    z-index: 10;
+    overflow-y: auto;
+  }
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+  }
+  .nav-item {
+    margin-bottom: 1rem;
+  }
+  .nav-link {
+    color: #fff;
+    font-size: 1.2rem;
+  }
+}
+
 .navbar-toggler {
-  outline: none;
   border: none;
+  outline: none;
 }
 
-.navbar-collapse {
-  transition: height 0.3s ease;
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1);
 }
 
-.navbar-toggler:focus {
-  box-shadow: none;
+.collapse:not(.show) {
+  display: none !important;
 }
 
 .collapse.show {
   display: block !important;
+  animation: fadeIn 0.5s;
 }
