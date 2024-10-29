@@ -105,3 +105,21 @@ body {
   font-size: 1rem;
   border-radius: 5px;
 }
+
+/* Fix for the mobile navbar not toggling */
+.navbar-toggler {
+  outline: none;
+  border: none;
+}
+
+.navbar-collapse {
+  transition: height 0.3s ease;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.collapse.show {
+  display: block !important;
+}
