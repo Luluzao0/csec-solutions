@@ -2,6 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# First Step
+For introduce all the modules we are using for this project:
+
+### Run `npm install`
+
+Remember using a superior version of Node than 18.3.1
+
 ## Available Scripts
 
 In the project directory, you can run:
