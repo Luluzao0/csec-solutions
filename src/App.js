@@ -4,6 +4,7 @@ import './App.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Header from './Header';
+import HomePage from './HomePage';
 import ServicesSection from './ServicesSection';
 import ContactSection from './ContactSection';
 import Footer from './Footer';
@@ -19,6 +20,7 @@ function App() {
   return (
     <div className="app-container">
       <Header />
+      <HomePage />
       <ServicesSection />
       <ContactSection />
       <Footer />
